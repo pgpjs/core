@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@pgpjs/core": ["./packages/core/src/index.ts"],
+      "@pgpjs/node": ["./packages/node/src/index.ts"],
+      "@pgpjs/react": ["./packages/react/src/index.ts"],
+      "@pgpjs/next": ["./packages/next/src/index.ts"]
+    }
+  },
+  "include": [
+    "packages/*/src/**/*",
+    "tests/**/*"
+  ]
+}

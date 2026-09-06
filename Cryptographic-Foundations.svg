@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1952.0589999999995 503.6" width="1952.0589999999995" height="503.6" style="--bg:#FFFFFF;--fg:#3B3B3B;--line:#3B3B3B;--accent:#005FB8;--muted:#3B3B3BCC;--surface:#F8F8F8;--border:#3B3B3B;background:var(--bg)">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 85%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 8 2.5, 0 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="5" refX="1" refY="2.5" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.5, 8 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+</defs>
+<g class="subgraph" data-id="Packages" data-label="Packages">
+  <rect x="444.5114999999996" y="40" width="909.6489999999998" height="181.8" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="444.5114999999996" y="40" width="909.6489999999998" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="456.5114999999996" y="54" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">Packages</text>
+</g>
+<g class="subgraph" data-id="Core_Subsystems" data-label="Core Subsystems">
+  <rect x="40" y="281.8" width="1872.0589999999995" height="181.8" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="40" y="281.8" width="1872.0589999999995" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="52" y="295.8" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">Core Subsystems</text>
+</g>
+<polyline class="edge" data-from="Core" data-to="API" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="914.5264999999995,205.8 914.5264999999995,325.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="NodePkg" data-to="Core" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1196.0319999999995,120.9 1196.0319999999995,144.9 914.5264999999995,144.9 914.5264999999995,168.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="ReactPkg" data-to="Core" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="914.5264999999995,120.9 914.5264999999995,144.9 914.5264999999995,144.9 914.5264999999995,168.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="NextPkg" data-to="Core" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="617.8304999999996,120.9 617.8304999999996,144.9 914.5264999999995,144.9 914.5264999999995,168.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="API" data-to="KeyMgr" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="914.5264999999995,362.70000000000005 914.5264999999995,386.70000000000005 505.9394999999998,386.70000000000005 505.9394999999998,410.70000000000005" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="API" data-to="PacketSys" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="914.5264999999995,362.70000000000005 914.5264999999995,386.70000000000005 914.5264999999996,386.70000000000005 914.5264999999996,410.70000000000005" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="API" data-to="ArmorSys" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="914.5264999999995,362.70000000000005 914.5264999999995,386.70000000000005 163.30149999999998,386.70000000000005 163.30149999999998,410.70000000000005" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="API" data-to="CryptoSub" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="914.5264999999995,362.70000000000005 914.5264999999995,386.70000000000005 1316.8149999999996,386.70000000000005 1316.8149999999996,410.70000000000005" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="API" data-to="StreamSub" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="914.5264999999995,362.70000000000005 914.5264999999995,386.70000000000005 1720.9559999999997,386.70000000000005 1720.9559999999997,410.70000000000005" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<g class="node" data-id="Core" data-label="@pgpjs/core (Framework-Independent)" data-shape="rectangle">
+  <rect x="779.8079999999995" y="168.9" width="269.43699999999995" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="914.5264999999995" y="187.35000000000002" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">@pgpjs/core (Framework-Independent)</text>
+</g>
+<g class="node" data-id="NodePkg" data-label="@pgpjs/node (Node Stream/File Adapters)" data-shape="rectangle">
+  <rect x="1053.9034999999994" y="84" width="284.25699999999995" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1196.0319999999995" y="102.45" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">@pgpjs/node (Node Stream/File Adapters)</text>
+</g>
+<g class="node" data-id="ReactPkg" data-label="@pgpjs/react (Hooks &amp; Context)" data-shape="rectangle">
+  <rect x="803.1494999999995" y="84" width="222.75399999999996" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="914.5264999999995" y="102.45" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">@pgpjs/react (Hooks &amp; Context)</text>
+</g>
+<g class="node" data-id="NextPkg" data-label="@pgpjs/next (Server Actions &amp; Route Handlers)" data-shape="rectangle">
+  <rect x="460.5114999999996" y="84" width="314.63799999999986" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="617.8304999999996" y="102.45" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">@pgpjs/next (Server Actions &amp; Route Handlers)</text>
+</g>
+<g class="node" data-id="API" data-label="High-Level API (encrypt, decrypt, sign, verify, generateKeyPair)" data-shape="rectangle">
+  <rect x="707.9309999999996" y="325.8" width="413.19099999999986" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="914.5264999999995" y="344.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">High-Level API (encrypt, decrypt, sign, verify, generateKeyPair)</text>
+</g>
+<g class="node" data-id="KeyMgr" data-label="Key Management (readKey, armor, dearmor, revoke, fingerprint)" data-shape="rectangle">
+  <rect x="298.6029999999999" y="410.70000000000005" width="414.6729999999998" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="505.9394999999998" y="429.15000000000003" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Key Management (readKey, armor, dearmor, revoke, fingerprint)</text>
+</g>
+<g class="node" data-id="PacketSys" data-label="Packet Engine (Old/New format, Tag 1..20, PacketList)" data-shape="rectangle">
+  <rect x="741.2759999999996" y="410.70000000000005" width="346.5009999999999" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="914.5264999999996" y="429.15000000000003" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Packet Engine (Old/New format, Tag 1..20, PacketList)</text>
+</g>
+<g class="node" data-id="ArmorSys" data-label="ASCII Armor &amp; CRC-24 Engine" data-shape="rectangle">
+  <rect x="56" y="410.70000000000005" width="214.60299999999995" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="163.30149999999998" y="429.15000000000003" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">ASCII Armor &amp; CRC-24 Engine</text>
+</g>
+<g class="node" data-id="CryptoSub" data-label="Crypto Engine (CFB mode, S2K, RSA, ECDSA, Ed25519, ECDH)" data-shape="rectangle">
+  <rect x="1115.7769999999996" y="410.70000000000005" width="402.076" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1316.8149999999996" y="429.15000000000003" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Crypto Engine (CFB mode, S2K, RSA, ECDSA, Ed25519, ECDH)</text>
+</g>
+<g class="node" data-id="StreamSub" data-label="Streaming Subsystem (Web Streams &amp; AsyncIterable)" data-shape="rectangle">
+  <rect x="1545.8529999999996" y="410.70000000000005" width="350.20599999999996" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1720.9559999999997" y="429.15000000000003" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Streaming Subsystem (Web Streams &amp; AsyncIterable)</text>
+</g>
+</svg>

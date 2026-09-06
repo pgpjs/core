@@ -1,0 +1,20 @@
+{
+  "name": "pgpjs-monorepo",
+  "private": true,
+  "type": "module",
+  "description": "Production-ready, open-source TypeScript OpenPGP toolkit",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "clean": "npm run clean --workspaces"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.7"
+  }
+}
